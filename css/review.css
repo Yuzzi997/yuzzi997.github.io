@@ -20,3 +20,15 @@ p{
 h4{
     text-align: center;
 }
+
+h3{
+    display:table; border-radius: 6px;
+    color:whitesmoke;
+    background-color: rgb(77, 77, 141);
+
+   
+}
+
+ul{
+    list-style-type:armenian;
+}
