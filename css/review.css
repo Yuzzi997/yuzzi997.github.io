@@ -1,8 +1,22 @@
 html{
-    background-color: palevioletred;
+    background-color:rgb(217, 193, 218);
 }
 
 img {
-    width: 400px;
-    height:auto
+    border: 30px solid rgb(175, 156, 189);
+    border-radius: 10px;
+    width: 250px;
+    height:auto;
   }
+
+p{
+    font-size: 12pt;
+}
+
+#special{
+    color:royalblue;
+}
+
+h4{
+    text-align: center;
+}
