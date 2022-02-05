@@ -2,12 +2,14 @@ html{
     background-color:rgba(217, 193, 218, 0.836);
 }
 
+h1{
+    text-align: center;
+}
+
 body{
     margin:0;
     height:100vh;
     cursor:cell;
-
-    
 }
 
 
