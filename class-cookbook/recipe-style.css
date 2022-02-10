@@ -1,8 +1,58 @@
 body{
     color:pink;
+    font-size:9px;
     font-family: 'Aclonica', sans-serif;
 }
 
+p{
+    font-size: 12px;
+}
+  
+div{
+    font-size:16px;
+}
+
+
 .main{
     text-align: left;
+}
+
+.item1 { 
+    grid-area: header;
+    text-align: center;
+}
+
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 30px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+ol{
+    text-align:right;
+    font-size:medium;
+    display:flex;
+}
+
+ul{
+    text-align:left;
+    font-size:20px;
+    color:rgba(197, 131, 197, 0.603);
+    display:list-item; list-style-position: inside;
+
 }
