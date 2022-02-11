@@ -1,5 +1,5 @@
 body{
-    color:pink;
+    color:rgb(255, 187, 60);
     font-size:9px;
     font-family: 'Aclonica', sans-serif;
 }
@@ -13,9 +13,6 @@ a{
 }
 
 
-.main{
-    text-align: left;
-}
 
 .item1 { 
     grid-area: header;
@@ -36,6 +33,7 @@ a{
 
 h1{   
     font-size: 20px;
+    text-align: center;
 }
 
 .item5 { grid-area: footer; }
@@ -45,13 +43,15 @@ h1{
   grid-template-areas:
     'header header header header header header'
     'menu main right right right right'
-    'menu footer footer footer footer footer';
+    'footer footer footer footer footer footer';
   grid-gap: 20px;
   padding: 10px;
 }
 
 #theitem1{
     font-size: 40px;
+    text-align: center;
+    padding-right: 10px;
 }
 
 #theitem2{
@@ -70,21 +70,28 @@ h1{
 }
 
 #recipe{
-    font-size: 23px;
+    font-size: 20px;
+    text-align: left;
+    color:rgb(255, 136, 0);
+}
+
+#list{
+    font-size: 12px;
     text-align: left;
 }
 
 ol{
     text-align:left;
     font-size:medium;
-    display:flex;
+    display:inline;
     flex-direction:column;
+
 }
 
 ul{
     text-align:left;
     font-size:30px;
-    color:rgba(197, 131, 197, 0.603);
+    color:rgb(255, 136, 0);
     display:list-item;
     list-style-type:none;
     padding-right: 50px;
