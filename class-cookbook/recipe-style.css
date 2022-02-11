@@ -24,16 +24,18 @@ a{
 }
 
 
-.item3 { grid-area: main; }
+#item3 { 
+    grid-area: main; 
+    text-align: center;
+}
 
 .item4 { 
     grid-area: right; 
-    text-align: center;
 }
 
 h1{   
     font-size: 20px;
-    text-align: center;
+    text-align: right;
 }
 
 .item5 { grid-area: footer; }
@@ -42,21 +44,35 @@ h1{
   display: grid;
   grid-template-areas:
     'header header header header header header'
-    'menu main right right right right'
+    'menu main main right right right'
     'footer footer footer footer footer footer';
   grid-gap: 20px;
   padding: 10px;
 }
 
+div{
+    text-align: right;
+}
+
+.part1{
+    display:flex;
+    align-items: flex-end;
+}
+
+.part2{
+    text-align:left;
+
+}
+
 #theitem1{
     font-size: 40px;
     text-align: center;
-    padding-right: 10px;
 }
 
 #theitem2{
     font-size: 50px;
 }
+
 
 .grid-container > div {
   background-color: rgba(255, 255, 255, 0.8);
@@ -67,6 +83,7 @@ h1{
 #lyrics{
     font-size:12px;
     font-weight: 10px;
+    text-align: right;
 }
 
 #recipe{
