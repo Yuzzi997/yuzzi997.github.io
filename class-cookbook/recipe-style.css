@@ -8,8 +8,8 @@ p{
     font-size: 12px;
 }
   
-div{
-    font-size:16px;
+a{
+    font-size: 50px;
 }
 
 
@@ -22,37 +22,71 @@ div{
     text-align: center;
 }
 
-.item2 { grid-area: menu; }
+.item2 { 
+    grid-area: menu;
+}
+
+
 .item3 { grid-area: main; }
-.item4 { grid-area: right; }
+
+.item4 { 
+    grid-area: right; 
+    text-align: center;
+}
+
+h1{   
+    font-size: 20px;
+}
+
 .item5 { grid-area: footer; }
 
 .grid-container {
   display: grid;
   grid-template-areas:
     'header header header header header header'
-    'menu main main main right right'
+    'menu main right right right right'
     'menu footer footer footer footer footer';
-  grid-gap: 30px;
+  grid-gap: 20px;
   padding: 10px;
+}
+
+#theitem1{
+    font-size: 40px;
+}
+
+#theitem2{
+    font-size: 50px;
 }
 
 .grid-container > div {
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px 0;
-  font-size: 30px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+#lyrics{
+    font-size:12px;
+    font-weight: 10px;
+}
+
+#recipe{
+    font-size: 23px;
+    text-align: left;
 }
 
 ol{
-    text-align:right;
+    text-align:left;
     font-size:medium;
     display:flex;
+    flex-direction:column;
 }
 
 ul{
     text-align:left;
-    font-size:20px;
+    font-size:30px;
     color:rgba(197, 131, 197, 0.603);
-    display:list-item; list-style-position: inside;
-
+    display:list-item;
+    list-style-type:none;
+    padding-right: 50px;
 }
+
