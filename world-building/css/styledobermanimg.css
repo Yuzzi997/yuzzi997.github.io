@@ -1,0 +1,39 @@
+#one{
+    height:10px;
+    width: 1000px;
+    border-width:0;
+    background-color:#523e18;
+    border-radius: 30in;
+}
+
+#two{
+    height:10px;
+    width: 1000px;
+    border-width:0;
+    background-color:#7e4a32;
+    border-radius: 30in;
+}
+
+#three{
+    height:10px;
+    width: 1000px;
+    border-width:0;
+    background-color:#3a322e;
+    border-radius: 30in;
+}
+
+#four{
+    height:10px;
+    width: 1000px;
+    border-width:0;
+    background-color:#f5f3f1e5;
+    border-radius: 30in;
+}
+
+#five{
+    height:10px;
+    width: 1000px;
+    border-width:0;
+    background-color:#3a3734;
+    border-radius: 30in;
+}
