@@ -1,0 +1,61 @@
+.description{
+    color:pink;
+}
+
+
+
+
+
+
+
+
+
+
+.topnav {
+    display: inline-block;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .topnav a {
+    float: center;
+    color: rgb(223, 144, 144);
+    text-align: center;
+    padding: 40px 16px;
+    text-decoration: none;
+    font-size: 30px;
+  }
+  
+  .topnav a:hover {
+    background-color: red(204, 44, 44);
+    color: rgb(179, 169, 169);
+  }
+  
+  .topnav a.active {
+    background-color: rgb(248, 236, 244);
+    color: white;
+  }
+
+
+.item1 { grid-area: header; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main right right right right right'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
