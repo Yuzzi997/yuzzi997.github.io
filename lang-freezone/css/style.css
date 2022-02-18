@@ -1,26 +1,144 @@
+/* Fonts */
+  @font-face {
+  font-family: 'Akaya Telivigala';
+  src: url('AkayaTelivigala-Regular.woff2') format('woff2'),
+      url('AkayaTelivigala-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Todays';
+  src: url('Todays.woff2') format('woff2'),
+      url('Todays.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Todays';
+  src: url('Todays-Bold.woff2') format('woff2'),
+      url('Todays-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Body */
+h1{
+  font-family: 'Akaya Telivigala';
+  font-size: 90px;
+  text-align: center;
+  color:rgb(175, 111, 122);
+  display:block;
+}
+h2{
+  font-family:'Todays-Bold';
+  font-size: 40px;
+  color:pink;
+  text-align: center;
+}
+
+.container{
+  border-radius: 50px;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.box1{
+  border:2em;
+  width: 35em;
+  height: 2200px;
+  background-color: rgb(126, 126, 167);
+  padding-right: 2em;
+  border-radius: 40px;
+
+}
+.box2{
+  width: 35em;
+  background-color: rgb(167, 163, 126);
+  padding-right: 2em;
+  border-radius: 40px;
+  padding-bottom: 3em;
+}
+.box3{
+  width: 35em;
+  background-color: rgb(126, 167, 160);
+  padding-right: 2em;
+  border-radius: 40px;
+  padding-bottom:3em;
+}
+.box4{
+  width:max-content;
+  padding-left: 2em;
+  padding-right: 2em;
+  border-radius: 40px;
+  padding-top: 2em;
+  background-color: rgb(167, 142, 126);
+}
+
+img{
+  width: 500px;
+  align-items: center;
+}
 .description{
     color:pink;
+    font-family:'Todays-Bold';
+}
+
+.conclusion{
+  font-family:'Todays-Bold';
+}
+
+.content{
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.description{
+  text-align: center;
+}
+
+p{
+  align-items: center;
+  padding-left: 3em;
 }
 
 
 /* Head Bar */
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+.navbar{
   background-color: rgb(155, 139, 139);
+  justify-content: center;
+  margin: 0;
+  padding: 0.1em;
+  overflow: hidden;
+  border-radius: 20px;
+  border-width: 0.1em;
+  position:relative;
+}
+
+ul{
+  justify-content: center;
+  position: sticky;
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
 }
 
 li {
-  float: left;
+  float:unset;
 }
 
 li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding:.8em;
   text-decoration: none;
 }
 
@@ -30,7 +148,9 @@ li a:hover:not(.active) {
 
 .active {
   background-color: pink;
+  border-radius: 60px;
 }
+
 
 
 /* Grid */
