@@ -4,29 +4,32 @@
 
 
 /* Head Bar */
-.topnav {
-  display: inline-block;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(155, 139, 139);
 }
 
-.topnav a {
-  float: center;
-  color: rgb(223, 144, 144);
-  text-align: center;
-  padding: 40px 16px;
-  text-decoration: none;
-  font-size: 30px;
+li {
+  float: left;
 }
 
-.topnav a:hover {
-  background-color: red(204, 44, 44);
-  color: rgb(179, 169, 169);
-}
-
-.topnav a.active {
-  background-color: rgb(248, 236, 244);
+li a {
+  display: block;
   color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(126, 126, 126);
+}
+
+.active {
+  background-color: pink;
 }
 
 
