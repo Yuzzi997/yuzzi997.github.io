@@ -34,22 +34,21 @@
   }
   
   
-  img{
+img{
     width: 100%;
     align-items: center;
   }
 
 * {
-    box-sizing: border-box;
-    
+    box-sizing: border-box; 
 }
 
 body{
-  background-color: gray;
+  background-color: rgb(223, 217, 217);
 }
 
 #grid-container1 {
-    display: grid;
+    display:grid;
     grid-template-columns: auto auto auto auto;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     grid-auto-rows: minmax(min-content, max-content);
@@ -73,19 +72,19 @@ h3{
 }
 
 .inspiration {
-  background-color: purple;
+  background-color: rgb(126, 126, 167);
 }
 
 .process{
-  background-color: aqua;
+  background-color: rgb(167, 163, 126);
 }
 
 .concept{
-  background-color: green;
+  background-color: rgb(126, 167, 160);
 }
 
 .conclusion{
-  background-color: blue;
+  background-color: rgb(167, 142, 126);
 }
 
 
@@ -139,3 +138,41 @@ h3{
     background-color: pink;
     border-radius: 60px;
   }
+
+  /* Body */
+h1{
+    font-family: 'Akaya Telivigala';
+    font-size: 90px;
+    text-align: center;
+    color:rgb(175, 111, 122);
+    display:block;
+  }
+
+h2{
+    font-family:'Todays-Bold';
+    font-size: 40px;
+    color:pink;
+    text-align: center;
+  }
+
+.description{
+    color:pink;
+    font-family:'Todays-Bold';
+    text-align: center;
+}
+
+.conclusion{
+  font-family:'AkayaTelivigala-Regular', sans-serif;
+  font-size: 25px;
+}
+
+.content{
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+p{
+  align-items: center;
+  padding-left: 3em;
+}
