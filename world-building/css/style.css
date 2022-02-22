@@ -8,6 +8,7 @@ body{
     background:transparent;
     width:50px;
     align-items: center;
+
 }
 
 .index-centered-content{
@@ -35,3 +36,35 @@ div{
     text-align: center;
 }
 
+
+
+/* arrow up and down */
+.arrow {
+    width: 30px;
+    height: auto;
+    position: relative;
+    display: inline-block;
+    margin: 50px;
+}
+.arrow .paw-open {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.arrow:hover .paw-open {
+    display: inline;
+}
+
+.arrow:hover .paw-close {
+    display:none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+img{
+    width:50px;
+}
