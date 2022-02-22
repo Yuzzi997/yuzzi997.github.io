@@ -8,6 +8,9 @@
     font-display: swap;
 }
 
+
+
+
 body{
     background-color:#546d6d;
     color:aliceblue;
@@ -222,4 +225,16 @@ div{
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
   }
+}
+
+
+
+/*mainindex*/
+#scroll-down-text{
+    font-size: 20px;
+}
+#conclusion{
+    font-size: 10px;
+    font-family: 'HauntingAttraction';
+    color:red;
 }
