@@ -1,7 +1,26 @@
 body{
     background-color:#546d6d;
     color:aliceblue;
-    font-size: 450px;
+    font-size: 40px;
+}
+
+.transparent{
+    background:transparent;
+    width:50px;
+    align-items: center;
+}
+
+.index-centered-content{
+    padding: 300px;
+    border: 30px;
+    align-items: center;
+
+}
+
+.centered-content{
+    padding:80px;
+    border:3px;
+    align-items: center;
 }
 
 h1{
