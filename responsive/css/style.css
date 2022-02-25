@@ -1,25 +1,81 @@
+/*font */
+@font-face {
+    font-family: 'Magiesta';
+    src: url('Magiesta.woff2') format('woff2'),
+        url('Magiesta.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    background-color: black;
+    color:blueviolet;
+}
+
 p{
     text-align: left;
-    margin:40px;
+    margin:45px;
 }
 
 div{
-   text-align: center;
+    font-family: 'Magiesta';
+    text-align: center;
 }
 
+@media screen and (max-width: 480px) {
+    body {
+      background-color: azure;
+      color:black;
+    }
+    h1 {
+        font-size: 25px;
+      }
+      p {
+        font-size: 15px;
+      }
+  }
 
 @media screen and (min-width: 768px) {
+    body {
+        background-color:rgb(109, 155, 240);
+        color:rgb(80, 58, 58);
+    }
     h1 {
-      font-size: 20px;
+      font-size: 30px;
     }
     p {
-      font-size: 15px;
+      font-size: 20px;
     }
   }
   
   @media screen and (min-width: 1024px) {
+    body {
+        background-color:rgb(153, 153, 120);
+        color:rgb(82, 65, 82);
+    }
     h1 {
       font-size: 35px;
     }
+    p {
+        font-size: 25px;
+      }
   }
+  
+
+  @media screen and (min-width: 1200px) {
+    body {
+        background-color:rgb(229, 216, 157);
+        color:rgb(9, 9, 68);
+    }
+    h1 {
+      font-size: 40px;
+    }
+    p {
+        font-size: 30px;
+      }
+  }
+
+  
+  
   
