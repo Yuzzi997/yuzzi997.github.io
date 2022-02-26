@@ -1,13 +1,122 @@
-/*mainindex*/
-.scroll-down-text{
-    font-size: 10px;
-}
-.conclusion{
-    font-size: 10px;
-    font-family: 'HauntingAttraction';
-    color:red;
+/*font*/
+@font-face {
+    font-family: 'Haunting Attraction';
+    src: url('HauntingAttraction.woff2') format('woff2'),
+        url('HauntingAttraction.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
-blockquote{
-    text-align: center;
+@font-face {
+    font-family: 'Aesthico';
+    src: url('Aesthico.woff2') format('woff2'),
+        url('Aesthico.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
+
+@font-face {
+    font-family: 'Aesthico';
+    src: url('Aesthico.woff2') format('woff2'),
+        url('Aesthico.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Finger Line';
+    src: url('FingerLineRegular.woff2') format('woff2'),
+        url('FingerLineRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'STRRETCH SANS FREE';
+    src: url('STRRETCHSANSFREERegular.woff2') format('woff2'),
+         url('STRRETCHSANSFREERegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/*maincontent*/
+body{
+    background-color: #751114;
+}
+
+.scroll-down-text{
+    font-family: 'Finger Line';
+    font-size: 100px;
+}
+
+.time{
+    font-size: 20px;
+    color:gray;
+    font-family: 'Finger Line';
+}
+
+
+
+
+
+
+
+
+
+/*scroll text*/
+
+#scroll-container {
+    border: 0px solid black;
+    border-radius: 5px;
+    height: 710px;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Finger Line';
+    font-size: 160px;
+    color:#ffffff;
+  }
+  
+#scroll-down-text {
+    height: 100%;
+    text-align: center;
+    
+    /* animation properties */
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    
+    -moz-animation: my-animation 35s linear infinite;
+    -webkit-animation: my-animation 35s linear infinite;
+    animation: my-animation 35s linear infinite;
+  }
+  
+  /* for Firefox */
+  @-moz-keyframes my-animation {
+    from { -moz-transform: translateY(100%); }
+    to { -moz-transform: translateY(-100%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateY(100%); }
+    to { -webkit-transform: translateY(-100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateY(100%);
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+    }
+    to {
+      -moz-transform: translateY(-100%);
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+    }
+  }

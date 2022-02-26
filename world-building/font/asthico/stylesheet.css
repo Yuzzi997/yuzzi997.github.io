@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Aesthico';
+    src: url('Aesthico.woff2') format('woff2'),
+        url('Aesthico.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

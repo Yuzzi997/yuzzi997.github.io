@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'STRRETCH SANS FREE';
+    src: url('STRRETCHSANSFREERegular.woff2') format('woff2'),
+        url('STRRETCHSANSFREERegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
