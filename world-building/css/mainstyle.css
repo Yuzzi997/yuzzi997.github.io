@@ -18,15 +18,6 @@
 }
 
 @font-face {
-    font-family: 'Aesthico';
-    src: url('Aesthico.woff2') format('woff2'),
-        url('Aesthico.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
     font-family: 'Finger Line';
     src: url('FingerLineRegular.woff2') format('woff2'),
         url('FingerLineRegular.woff') format('woff');
@@ -50,41 +41,58 @@ body{
     background-color: #751114;
 }
 
-.scroll-down-text{
-    font-family: 'Finger Line';
-    font-size: 100px;
-}
 
 .time{
-    font-size: 20px;
+    font-size: 15px;
     color:gray;
-    font-family: 'Finger Line';
+    font-family: 'Aesthico';
+}
+.content{
+    text-align: center;
+    font-family: 'Aesthico';
+    font-size: 15px;
+    color:#ffffff;
 }
 
 
+/*invisible text*/
+.invisible-container{
+    /*display:none;*/
+}
 
+/*hover effect*/
+.hover-text {
+    font-family:'Aesthico';
+    font-style:italic;
+    color: #ffff0c;
+    transition: background-color .1s;
+  }
 
-
-
-
+ a:hover{
+    display:block;
+    color: #ffff0c;
+    font-family: 'Finger Line';
+    font-size: 100px;
+  }
 
 
 /*scroll text*/
-
-#scroll-container {
+.scroll-container {
     border: 0px solid black;
     border-radius: 5px;
-    height: 710px;
+    height:410px;
     overflow: hidden;
     text-align: center;
-    font-family: 'Finger Line';
-    font-size: 160px;
+    font-family: 'Aesthico';
+    font-size: 150px;
     color:#ffffff;
   }
   
-#scroll-down-text {
+.scroll-down-text {
+    font-family: 'Finger Line';
     height: 100%;
     text-align: center;
+    color:#ffff0c;
     
     /* animation properties */
     -moz-transform: translateY(100%);
@@ -120,3 +128,4 @@ body{
       transform: translateY(-100%);
     }
   }
+
