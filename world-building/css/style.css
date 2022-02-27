@@ -1,5 +1,42 @@
 /*fonts*/
 @font-face {
+  font-family: 'Haunting Attraction';
+  src: url('HauntingAttraction.woff2') format('woff2'),
+      url('HauntingAttraction.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aesthico';
+  src: url('Aesthico.woff2') format('woff2'),
+      url('Aesthico.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Finger Line';
+  src: url('FingerLineRegular.woff2') format('woff2'),
+      url('FingerLineRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'STRRETCH SANS FREE';
+  src: url('STRRETCHSANSFREERegular.woff2') format('woff2'),
+       url('STRRETCHSANSFREERegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*fonts*/
+@font-face {
     font-family: 'Haunting Attraction';
     src: url('HauntingAttraction.woff2') format('woff2'),
         url('HauntingAttraction.woff') format('woff');
@@ -10,7 +47,7 @@
 
 
 body{
-    background-color:#546d6d;
+    background-color:#751114;
     color:aliceblue;
     font-size: 40px;
 }
@@ -86,7 +123,7 @@ a{
 }
 
 a:hover {
-    color:rgb(158, 1, 1);
+    color:#ffff0c;
 }
 
 /*hoverovertext*/
@@ -114,7 +151,8 @@ div{
     overflow: hidden;
   }
 #scroll-text {
-    font-family:Haunting Attraction;
+  font-family: 'Aesthico';
+  font-size: 19px;
 
     /* animation properties */
     -moz-transform: translateX(100%);
@@ -224,6 +262,3 @@ div{
     transform: translateX(100%);
   }
 }
-
-
-

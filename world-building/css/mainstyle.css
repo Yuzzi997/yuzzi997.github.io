@@ -43,11 +43,11 @@ body{
 
 
 .time{
-    font-size: 15px;
+    font-size: 10px;
     color:gray;
     font-family: 'Aesthico';
 }
-.content{
+div{
     text-align: center;
     font-family: 'Aesthico';
     font-size: 15px;
@@ -55,10 +55,13 @@ body{
 }
 
 
-/*invisible text*/
+/*invisible text
 .invisible-container{
-    /*display:none;*/
+    padding: 20px;
+    display: none;
 }
+*/
+
 
 /*hover effect*/
 .hover-text {
@@ -68,11 +71,15 @@ body{
     transition: background-color .1s;
   }
 
- a:hover{
+a:hover{
     display:block;
     color: #ffff0c;
     font-family: 'Finger Line';
     font-size: 100px;
+  }
+
+a:hover + .invisible-container {
+    display:block;
   }
 
 
@@ -99,7 +106,7 @@ body{
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
     
-    -moz-animation: my-animation 35s linear infinite;
+    -moz-animation: my-animation 15s linear infinite;
     -webkit-animation: my-animation 35s linear infinite;
     animation: my-animation 35s linear infinite;
   }
@@ -129,3 +136,56 @@ body{
     }
   }
 
+
+  /* nav*/
+  /*hoverovertext*/
+button {
+    width: 100%;
+    display: contents;
+  }
+  
+  .centered-content{
+    padding:80px;
+    border:3px;
+    align-items: center;
+}
+
+#paw{
+    display: flex;
+}
+
+div{
+    text-align: center;
+}
+
+/* arrow up and down */
+.arrow {
+    width: 30px;
+    height: auto;
+    position: relative;
+    display: inline-block;
+    margin: 50px;
+}
+.arrow .paw-open {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.arrow:hover .paw-open {
+    display: inline;
+    width: 80px;
+}
+.arrow:hover .paw-close {
+    display:none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+img{
+    width:50px;
+    position: absolute;
+}
