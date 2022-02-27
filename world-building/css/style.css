@@ -128,7 +128,7 @@ a:hover {
 
 /*hoverovertext*/
 span{
-    font-size:120px;
+    font-size:140px;
     font-family:Haunting Attraction;
 }
 
@@ -136,8 +136,6 @@ button {
     width: 100%;
     display: contents;
   }
-  
-  
 
 
 /*textflow*/
@@ -159,9 +157,9 @@ div{
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
     
-    -moz-animation: my-animation 15s linear infinite;
-    -webkit-animation: my-animation 15s linear infinite;
-    animation: my-animation 15s linear infinite;
+    -moz-animation: my-animation 20s linear infinite;
+    -webkit-animation: my-animation 20s linear infinite;
+    animation: my-animation 20s linear infinite;
     
     /*overflow text*/
     white-space: nowrap;
