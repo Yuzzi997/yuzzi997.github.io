@@ -47,7 +47,7 @@
 
 
 body{
-    background-color:#751114;
+    background-color:#1c0a0b;
     color:aliceblue;
     font-size: 40px;
 }
@@ -123,7 +123,7 @@ a{
 }
 
 a:hover {
-    color:#ffff0c;
+    color:#e4fff2;
 }
 
 /*hoverovertext*/

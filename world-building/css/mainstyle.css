@@ -38,20 +38,24 @@
 
 /*maincontent*/
 body{
-    background-color: #751114;
+    background-color: #1c0a0b;
 }
 
 
 .time{
-    font-size: 10px;
-    color:gray;
-    font-family: 'Aesthico';
+    font-size: 6px;
+    color:rgb(226, 222, 222);
+    font-family: 'STRRETCH SANS FREE';
 }
 div{
-    text-align: center;
-    font-family: 'Aesthico';
-    font-size: 15px;
+    text-align: right;
+    font-family: 'STRRETCH SANS FREE';
+    font-size: 20px;
     color:#ffffff;
+}
+.content{
+  border:#ffff0c;
+  width: 170px;
 }
 
 
@@ -65,17 +69,17 @@ div{
 
 /*hover effect*/
 .hover-text {
-    font-family:'Aesthico';
-    font-style:italic;
-    color: #ffff0c;
+    font-family:'STRRETCH SANS FREE';
+    color: #e4fff2;
     transition: background-color .1s;
+    text-decoration: underline;
   }
 
 a:hover{
-    display:block;
-    color: #ffff0c;
-    font-family: 'Finger Line';
-    font-size: 100px;
+    display:contents;
+    color: #e4fff2;
+    font-family: 'STRRETCH SANS FREE';
+    font-style:italic;
   }
 
 a:hover + .invisible-container {
@@ -88,18 +92,20 @@ a:hover + .invisible-container {
     border: 0px solid black;
     border-radius: 5px;
     height:410px;
+    width: 700px;
     overflow: hidden;
     text-align: center;
-    font-family: 'Aesthico';
-    font-size: 150px;
+    font-family: 'STRRETCH SANS FREE';
+    font-size: 70px;
     color:#ffffff;
+    padding-top: 4em;
   }
   
 .scroll-down-text {
-    font-family: 'Finger Line';
+    font-family: 'STRRETCH SANS FREE';
     height: 100%;
-    text-align: center;
-    color:#ffff0c;
+    text-align: left;
+    color:#e4fff2;
     
     /* animation properties */
     -moz-transform: translateY(100%);
@@ -155,7 +161,7 @@ button {
 }
 
 div{
-    text-align: center;
+    text-align: right;
 }
 
 /* arrow up and down */

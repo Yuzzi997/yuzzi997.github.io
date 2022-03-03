@@ -1,5 +1,5 @@
 body{
-    background-color:#751114;
+    background-color:#1c0a0b;
     color:aliceblue;
     font-size: 40px;
 }
@@ -40,9 +40,9 @@ a{
   }
   
   a:hover {
-      font-size:150px;
-      color:#ffff0c;
-      font-family: 'Finger Line';
+      font-size:130px;
+      color:#e4fff2;
+      font-family:'STRRETCH SANS FREE';
   }
 
 
