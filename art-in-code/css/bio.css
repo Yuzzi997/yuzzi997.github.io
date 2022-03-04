@@ -1,0 +1,33 @@
+body{
+    background: #ccc;
+}
+
+p{
+    font-size: 60px;
+    
+}
+
+#name{
+    font-size: 30px;
+}
+
+span{
+    font-size: 25px;
+}
+
+#information{
+    width: 50%;
+    padding-left:80px ;
+    padding-right:80px ;
+}
+
+img{
+    padding-top: 30px;
+    padding: 20px;
+    width: 400px;
+}
+
+#img{
+    display: flex;
+    padding: 20px;
+}
