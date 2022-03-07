@@ -38,24 +38,26 @@
 
 /*maincontent*/
 body{
-    background-color: #1c0a0b;
+    background-color: #000000;
 }
 
 
 .time{
     font-size: 6px;
-    color:rgb(226, 222, 222);
+    color:rgb(255, 255, 255);
     font-family: 'STRRETCH SANS FREE';
 }
 div{
-    text-align: right;
+    text-align: left;
     font-family: 'STRRETCH SANS FREE';
-    font-size: 20px;
+    font-size: 15px;
     color:#ffffff;
 }
 .content{
-  border:#ffff0c;
-  width: 170px;
+  background-color: #413e3e;
+  width: 500px;
+  text-align: left;
+  padding-top: 230px;
 }
 
 
@@ -92,7 +94,7 @@ a:hover + .invisible-container {
     border: 0px solid black;
     border-radius: 5px;
     height:410px;
-    width: 700px;
+    width: 600px;
     overflow: hidden;
     text-align: center;
     font-family: 'STRRETCH SANS FREE';
@@ -195,3 +197,5 @@ img{
     width:50px;
     position: absolute;
 }
+
+

@@ -47,7 +47,7 @@
 
 
 body{
-    background-color:white;
+    background-color:rgb(0, 0, 0);
     color:aliceblue;
     font-size: 40px;
 }
@@ -152,7 +152,7 @@ div{
   font-family: 'Aesthico';
   font-size: 19px;
   padding:18rem;
-  color:black;
+  color:rgb(255, 255, 255);
   
 
     /* animation properties */
