@@ -38,12 +38,6 @@ a{
       text-decoration: none;
       color:rgba(255, 255, 255, 0.863);
   }
-  
-  a:hover {
-      font-size:130px;
-      color:#e4fff2;
-      font-family:'STRRETCH SANS FREE';
-  }
 
 
   /* arrow up and down */
@@ -78,7 +72,14 @@ img{
     position: absolute;
 }
 
-
+span{
+        animation: disappear 5s ease forwards;
+    }
+    
+    @keyframes disappear {
+        from { opacity: 3; }
+        to { opacity: 0; }
+}
 
 
 

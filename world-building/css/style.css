@@ -47,7 +47,7 @@
 
 
 body{
-    background-color:#1c0a0b;
+    background-color:white;
     color:aliceblue;
     font-size: 40px;
 }
@@ -151,6 +151,9 @@ div{
 #scroll-text {
   font-family: 'Aesthico';
   font-size: 19px;
+  padding:18rem;
+  color:black;
+  
 
     /* animation properties */
     -moz-transform: translateX(100%);
