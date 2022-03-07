@@ -54,12 +54,13 @@ div{
     color:#ffffff;
 }
 .content{
-  background-color: #413e3e;
-  width: 500px;
+  background-color: rgba(128, 128, 128, 0.5);
+  width: 700px;
   text-align: left;
-  padding-top: 230px;
+  padding-top: 20px;
+  padding-left:10px;
+  padding-right:10px;
 }
-
 
 /*invisible text
 .invisible-container{
@@ -79,7 +80,7 @@ div{
 
 a:hover{
     display:contents;
-    color: #e4fff2;
+    color: #000000;
     font-family: 'STRRETCH SANS FREE';
     font-style:italic;
   }
@@ -94,7 +95,7 @@ a:hover + .invisible-container {
     border: 0px solid black;
     border-radius: 5px;
     height:410px;
-    width: 600px;
+    width: 550px;
     overflow: hidden;
     text-align: center;
     font-family: 'STRRETCH SANS FREE';
@@ -163,7 +164,7 @@ button {
 }
 
 div{
-    text-align: right;
+    text-align: left;
 }
 
 /* arrow up and down */
