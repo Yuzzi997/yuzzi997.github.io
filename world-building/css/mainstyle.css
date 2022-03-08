@@ -55,11 +55,12 @@ div{
 }
 .content{
   background-color: rgba(128, 128, 128, 0.5);
-  width: 700px;
+  width: 400px;
   text-align: left;
-  padding-top: 240px;
+  padding-top: 120px;
   padding-left:10px;
   padding-right:10px;
+  height: 330px;
 }
 
 
@@ -75,7 +76,7 @@ div{
 /*hover effect*/
 .hover-text {
     font-family:'STRRETCH SANS FREE';
-    color: #e4fff2;
+    color: #ffffff;
     transition: background-color .1s;
     text-decoration: underline;
   }
@@ -94,16 +95,15 @@ a:hover + .invisible-container {
 
 /*scroll text*/
 .scroll-container {
-    border: 0px solid black;
     border-radius: 5px;
-    height:410px;
-    width: 550px;
+    height:450px;
+    width: 870px;
     overflow: hidden;
     text-align: center;
     font-family: 'STRRETCH SANS FREE';
     font-size: 70px;
     color:#ffffff;
-    padding-top: 4em;
+    
   }
   
 .scroll-down-text {
@@ -111,6 +111,7 @@ a:hover + .invisible-container {
     height: 100%;
     text-align: left;
     color:#ffffff;
+  
     
     /* animation properties */
     -moz-transform: translateY(100%);
