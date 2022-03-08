@@ -57,7 +57,7 @@ div{
   background-color: rgba(128, 128, 128, 0.5);
   width: 700px;
   text-align: left;
-  padding-top: 20px;
+  padding-top: 240px;
   padding-left:10px;
   padding-right:10px;
 }
@@ -108,7 +108,7 @@ a:hover + .invisible-container {
     font-family: 'STRRETCH SANS FREE';
     height: 100%;
     text-align: left;
-    color:#e4fff2;
+    color:#ffffff;
     
     /* animation properties */
     -moz-transform: translateY(100%);
@@ -200,3 +200,43 @@ img{
 }
 
 
+span{
+  animation: disappear 7s ease forwards;
+}
+
+@keyframes disappear {
+  from { opacity: 3; }
+  to { opacity: 0; }
+}
+
+#title{
+  font-size: 100px;
+  font-size:30px;
+    font-family: 'Aesthico';
+      text-decoration: none;
+      color:rgba(255, 255, 255, 0.863);
+      padding-left:450px;
+      
+}
+  /*running hoveroverlink*/
+  a{
+    font-size:30px;
+    font-family: 'Aesthico';
+      text-decoration: none;
+      color:rgba(255, 255, 255, 0.863);
+  }
+  /*hover effect*/
+.hover-text {
+  font-family:'STRRETCH SANS FREE';
+  color: #ffffff;
+  transition: background-color .1s;
+  font-size: 10px;
+}
+
+a:hover{
+  display:contents;
+  color: #610c0c;
+  font-family: 'STRRETCH SANS FREE';
+  font-style:italic;
+  text-decoration: underline;
+}

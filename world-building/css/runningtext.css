@@ -81,5 +81,31 @@ span{
         to { opacity: 0; }
 }
 
+p{
+    font-size: 10px;
+    font-family: 'Aesthico';
+}
 
+/*hover effect*/
+.hover-text {
+    font-family:'STRRETCH SANS FREE';
+    color: #ffffff;
+    transition: background-color .1s;
+    font-size: 10px;
+  }
 
+a:hover{
+    display:contents;
+    color: #610c0c;
+    font-family: 'STRRETCH SANS FREE';
+    font-style:italic;
+    text-decoration: underline;
+  }
+
+  /*running hoveroverlink*/
+a{
+    font-size:30px;
+    font-family: 'Aesthico';
+      text-decoration: none;
+      color:rgba(255, 255, 255, 0.863);
+  }
