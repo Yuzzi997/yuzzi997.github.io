@@ -6,7 +6,7 @@ p {
 
 body {
     margin:4px;
-    background: green;
+    background: rgb(131, 153, 131);
 }
 
 #container {
@@ -28,13 +28,27 @@ body {
 
 .bubble {
     position: absolute;
-    width: 3rem;
-    height: 3rem;
+    width: 3em;
+    height: 3em;
     cursor: pointer;
 }
 
 img{
-    width: 20rem;
+    width: 20em;
     height:auto;
     float:left;
 }
+
+@media screen and (min-width: 1024px) {
+    body {
+        background-color: rgb(35, 80, 35);
+    
+    }
+    h1 {
+        color: rgb(143, 15, 15);
+        padding-top: 13.5rem;
+        text-align: center;
+        font-size: 3.8rem;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    }
