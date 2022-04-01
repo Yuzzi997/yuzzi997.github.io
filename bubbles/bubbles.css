@@ -1,20 +1,40 @@
-html {
-    font-size:62.5%;
+p {
+    font-size: 3em;
+    font-family: Aclonica;
+    color:rgb(224, 221, 172)
 }
 
 body {
-    margin:0;
+    margin:4px;
+    background: green;
 }
 
 #container {
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(135deg, rgb(251,255,254), rgb(242,261,249));
+    width: 90vw;
+    height: 90vh;
+}
+
+#container-two {
+    width: 30vw;
+    height: 90vh;
+    float:left;
+}
+
+#container-one {
+    width: 60%;
+    height: 90vh;
+    float:right;
 }
 
 .bubble {
     position: absolute;
-    width: 5rem;
-    height: 5rem;
+    width: 3rem;
+    height: 3rem;
     cursor: pointer;
+}
+
+img{
+    width: 20rem;
+    height:auto;
+    float:left;
 }
