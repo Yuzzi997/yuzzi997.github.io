@@ -16,10 +16,5 @@ body {
     position: absolute;
     width: 5rem;
     height: 5rem;
-    background:rgba(247,255,255,0.5);
-    border:solid .1rem rgba(106,198,198,0.2);
-    border-radius: 50%;
-    box-shadow: inset -.3rem -.3rem .8rem rgba(106,198,198,0.3);
     cursor: pointer;
 }
-
