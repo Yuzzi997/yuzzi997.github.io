@@ -1,0 +1,187 @@
+
+/* nav */
+.navbar {
+    align-items: center;
+    overflow: hidden;
+    background-color: rgb(176, 47, 4);
+    top: 0;
+    width: 100%;
+    /*justify-content: space-around; */
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: rgb(1, 19, 5);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 8px;
+    font-size: 16px;
+  }
+  
+  .navbar a:hover {
+    font-style: italic;
+    color: rgb(255, 255, 255);
+  }
+  
+  .main {
+    padding: 16px;
+    margin-top: 30px;
+    height: 1500px; /* Used in this example to enable scrolling */
+  }
+
+
+  /* main */
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the header */
+  header {
+    border-radius: 30px;
+    background-color: rgba(102, 102, 102, 0.096);
+    padding: 30px;
+    text-align: center;
+    font-size: 70px;
+    color: rgb(176, 47, 4);
+
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  
+  /* left content */
+   ul {
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  span {
+    float: left;
+    width: 30%;
+    height: 1309px; 
+    background: #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+
+  /* right content */
+  article {
+    float: left;
+    padding: 30px;
+    width: 70%;
+    height: 1307px;
+    background-color: #f1f1f1;
+
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  
+  /* Clear floats after the columns */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* footer */
+  footer {
+  
+    text-align: right;
+    color:  black;
+  }
+  
+  
+  /* added */
+  .quote{
+      text-align:center;
+  }
+
+  body{
+      background-color:rgb(65, 60, 60);
+  }
+  
+  #aiweiwei{
+      width: 25rem;
+      padding-left: 2rem;
+      padding-top: 2rem;
+  }
+
+  #displayguazi{
+      width: 100%;
+      align-items: center;
+  }
+
+header{
+    background-image: url("https://greyartgallery.nyu.edu/wp-content/uploads/2018/05/1200px-Sunflower_Seeds_by_Ai_Weiwei_wikicommon.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: bottom;
+}
+
+p{
+    padding-left:30px;
+    font-size: 18.5px;
+    column-count: 2;
+}
+
+h1{
+    font-size: 30px;
+}
+
+#big{
+    padding-top: 30px;
+}
+
+#text{
+    padding-left: 3px;
+}
+
+@media (max-width: 600px) {
+    body, span, article {
+      width: 100%;
+      height: auto;
+      font-size: small;
+      background-color: rgba(177, 223, 177, 0.39);
+    }
+  }
+
+  @media (max-width: 800px) {
+    body, span, article {
+      width: 100%;
+      height: auto;
+      font-size: medium;
+      background-color: rgba(97, 138, 214, 0.39);
+    }
+  }
+
+  @media (max-width: 1230px) {
+    body, span, article {
+      width: 100%;
+      height: auto;
+      font-size: medium;
+      background-color: rgba(97, 138, 214, 0.39);
+    }
+    span{
+      background-color:#ccc;
+      border-radius: 30px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+   #series{
+    margin-left: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+   }
+
+    article{
+      background-color:#ccc;
+      border-radius: 30px;
+    }
+  }
+
