@@ -7,7 +7,7 @@ console.log(Airtable);
 var base = new Airtable({apiKey: 'keyN5uN05SQ6KpI6g'}).base(
         'app8QITorsk2f2Pf2');
 
-//get "books" from yable from airtable database
+//get "books" from table from airtable database
 base("books").select({}).eachPage(gotPageOfBooks, gotAllBooks);
 
 //empty array to hold our book data
