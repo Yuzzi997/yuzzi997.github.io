@@ -1,0 +1,34 @@
+.home{
+    font-family: 'Lovers Quarrel', cursive;
+    font-size: 65px;
+    text-decoration: none;
+    color:black;
+}
+
+hr{
+    color:black;
+    height:3px;
+    background-color:black;
+    margin-top: -20px;
+}
+
+.topnav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin:10px;
+}
+
+
+span{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.navimg{
+    width: 60%;
+    margin-top: 10px;
+}
