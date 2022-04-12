@@ -1,15 +1,18 @@
+
+/* /////////////////////////////////// NAV BAR ///////////////////////////////////// */
 .home{
     font-family: 'Lovers Quarrel', cursive;
-    font-size: 65px;
+    font-size: calc(0.75em + 4vw);
     text-decoration: none;
     color:black;
 }
 
 hr{
     color:black;
-    height:3px;
+    height:calc(0.1em + 0.1vw);
     background-color:black;
-    margin-top: -20px;
+    margin-top: -18px;
+    position: relative;
 }
 
 .topnav{
@@ -29,9 +32,26 @@ span{
 }
 
 .navimg{
-    width: 60%;
+    width: calc(0.75em + 3vw);
+
     margin-top: 10px;
+
 }
 
+nav{
+    font-family: 'Lovers Quarrel', cursive;
+    font-size: calc(0.75em + 10vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:180px;
+}
+/* /////////////////////////////////// MEDIA SCREEN ///////////////////////////////////// */
 
-/* /////////////////////////////////// NAV BAR ///////////////////////////////////// */
+@media only screen and (max-width: 800px) {
+    hr{
+        margin-top: -10px;
+    }
+  }
+    
+
