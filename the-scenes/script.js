@@ -21,21 +21,3 @@ var base = new Airtable({apiKey: 'keyN5uN05SQ6KpI6g'}).base(
             console.log('Retrieved', record.get('image'));
         });
     
-        // To fetch the next page of records, call `fetchNextPage`.
-        // If there are more records, `page` will get called again.
-        // If there are no more records, `done` will get called.
-        fetchNextPage();
-    
-    }, function done(err) {
-        if (err) { console.error(err); return; }
-    });
-
-
-    function showscenes() {
-        console.log("showimage()");
-      
-        // find the shelf element
-        const image = document.getElementById("image")}
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
