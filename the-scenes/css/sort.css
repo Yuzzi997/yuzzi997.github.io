@@ -46,3 +46,18 @@ span{
         margin-top: -10px;
     }
   }
+
+
+/* //////////////////////////////// TESTING SORT SYSTEM //////////////////////////////// */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    width:100%;
+    text-align: center;
+}

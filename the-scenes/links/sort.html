@@ -6,9 +6,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Sort The Scenes</title>
 
-   <link rel="stylesheet" href="../css/style.css">
+   <link rel="stylesheet" href="../css/sort.css">
 
-   <script src="/script.js" type="text/javascript" defer></script>
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +16,6 @@
 
 <body>
 
-    <script src="/lib/airtable.browser.js"></script>
  
     <div class="topnav">
        <a class="home" href="/index.html">THE SCENES</a>
@@ -41,8 +39,45 @@
      <hr>  
  
  
- 
- 
+     <!---testing the sorting system--->
+    
+     <input type="radio" name="photos" id="check1" checked>
+     <input type="radio" name="photos" id="check2" >
+     <input type="radio" name="photos" id="check3" >
+     <input type="radio" name="photos" id="check4" >
+
+     <div class="container">
+        <h1> SORT AND SELECT THE SCENES</h1>
+        <div class="top-contnet">
+           <h3>Environment</h3>
+           <lable for="check1">All Photos</lable>
+           <lable for="check2">Private</lable>
+           <lable for="check3">Public</lable>
+           <lable for="check4">N/A</lable>
+        </div>
+     </div>
      
+     <div class="photo-gallery">
+        <div class="pic-private">
+           <img src="../asset/Private.jpeg" alt="Private Scene 1">
+        </div>
+        <div class="pic-public">
+         <img src="../asset/Public.jpeg" alt="Public Scene 1">
+      </div>
+      <div class="pic NA">
+         <img src="../asset/NA.jpeg" alt="N:A Scene 1">
+      </div>
+      <div class="pic-private">
+         <img src="../asset/Private2.jpeg" alt="Private Scene 1">
+      </div>
+      <div class="pic-public">
+       <img src="../asset/Public2.jpeg" alt="Public Scene 1">
+    </div>
+    <div class="pic-NA">
+       <img src="../asset/NA2.jpeg" alt="N:A Scene 1">
+    </div>
+     </div>
+   
+
  </body>
 </html>

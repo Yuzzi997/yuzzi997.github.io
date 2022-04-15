@@ -21,6 +21,3 @@ var base = new Airtable({apiKey: 'keyN5uN05SQ6KpI6g'}).base(
             console.log('Retrieved', record.get('image'));
         });
     
-
-       
-    
