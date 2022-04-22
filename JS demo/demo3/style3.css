@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+    margin:auto;
+}
+
+div{
+    border: 1px solid rgba(0,0,0.2);
+}
+
+.pixel:hover{
+    background-color: yellow;
+}
+
+.grid-container{
+    margin:auto;
+    display:grid;
+    width:300px;
+    height:300px;
+    grid-template-columns: repeat(16,1fr);
+    grid-template-rows: repeat(16,1fr);
+}
