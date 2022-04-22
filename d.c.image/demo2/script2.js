@@ -12,3 +12,5 @@ window.addEventListener("mousemove", function(event)
     myCursor.style.left = (event.pageX - 20)+ "px";
 });
 
+
+

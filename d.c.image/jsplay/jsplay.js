@@ -1,44 +1,31 @@
-// let clickDiv = document.querySelector("#clickDiv")
-
-// clickDiv.addEventListener("click", function(e){
-//     console.log("Click")
-//     console.log(e);
-// });
-
-// clickDiv.addEventListener("mousedown", function(e){
-//     console.log("mousedown!")
-//     console.log(e);
-// })
-
-// clickDiv.addEventListener("mouseup", function(e)
-// {
-//     console.log("mouseup")
-//     console.log(e);
-// });
-
 var count = 0;
 var introshown = true;
 var imagesPath = [
-    'asset/1.jpg',
-    'asset/2.jpg',
-    'asset/3.jpg',
-    'asset/4.jpg',
-    'asset/5.jpg',
-    'asset/6.jpg'
+    '/asset/1.jpg',
+    '/asset/2.jpg',
+    '/asset/3.jpg',
+    '/asset/4.jpg',
+    '/asset/5.jpg',
+    '/asset/6.jpg'
 ];
 
 //pull images by dom
 // var element = document.getElementById('myimages');
 var imgDom = document.getElementById("myimages");
-console.log( document.getElementById("myimages"))
+console.log( document.getElementById("image"))
+
+//spacebar count
+function countNumber() {
+    count = count + 1;
+} 
 
 //pull image object key
 function setImgSrc(){
     if (count === 6){
         count = 0
     }
-    var imgDom = document.getElementById("images");
-    console.log( document.getElementById("image"))
+    var imgDom = document.getElementById("myimages");
+    console.log( document.getElementById("myimage"))
  
     console.log(imgDom)
     //replace image address
@@ -49,11 +36,11 @@ function setImgSrc(){
 //keyup function
 window.onkeyup = function (e) {
     console.log(e.keyCode)
-    if (e.keyCode !== 6) {
+    if (e.keyCode !== 32) {
         return;
     }
     if (introshown === true) {
-        document.getElementById("image/1.png").style.display = "none";
+        document.getElementById("introimage").style.display = "none";
         document.getElementById("myimages").style.display = "block";
         introshown = false;
     } else { 
