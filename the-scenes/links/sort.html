@@ -7,7 +7,7 @@
    <title>Sort The Scenes</title>
 
    <link rel="stylesheet" href="../css/sort.css">
-
+   <script src="/script.js" type="text/javascript" defer></script>
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,8 +15,8 @@
 </head>
 
 <body>
+   <script src="/lib/airtable.browser.js"></script>
 
- 
     <div class="topnav">
        <a class="home" href="/index.html">THE SCENES</a>
  
@@ -41,42 +41,29 @@
  
      <!---testing the sorting system--->
     
-     <input type="radio" name="photos" id="check1" checked>
-     <input type="radio" name="photos" id="check2" >
-     <input type="radio" name="photos" id="check3" >
-     <input type="radio" name="photos" id="check4" >
+     <h1>Sorting Scenes</h1>
+    
+    <!-- Add filter buttons here: -->
+    <button id="showPublicButton">Public</button>
+    <button id="showPrivateButton">Private</button>
+    
+    <br><br>
+    
+    <button id="showGodsEyesButton">God's Eyes</button> 
+    <button id="showLongShotButton">Long Shot</button>
+    <button id="showCloseShotButton">Close Shot</button>
 
-     <div class="container">
-        <h1> SORT AND SELECT THE SCENES</h1>
-        <div class="top-contnet">
-           <h3>Environment</h3>
-           <lable for="check1">All Photos</lable>
-           <lable for="check2">Private</lable>
-           <lable for="check3">Public</lable>
-           <lable for="check4">N/A</lable>
-        </div>
-     </div>
-     
-     <div class="photo-gallery">
-        <div class="pic-private">
-           <img src="../asset/Private.jpeg" alt="Private Scene 1">
-        </div>
-        <div class="pic-public">
-         <img src="../asset/Public.jpeg" alt="Public Scene 1">
-      </div>
-      <div class="pic NA">
-         <img src="../asset/NA.jpeg" alt="N:A Scene 1">
-      </div>
-      <div class="pic-private">
-         <img src="../asset/Private2.jpeg" alt="Private Scene 1">
-      </div>
-      <div class="pic-public">
-       <img src="../asset/Public2.jpeg" alt="Public Scene 1">
-    </div>
-    <div class="pic-NA">
-       <img src="../asset/NA2.jpeg" alt="N:A Scene 1">
-    </div>
-     </div>
+    <br><br>
+
+    <button id="showNoVictimButton">No Victim</button> 
+    <button id="showSingleVictimButton">Single Victim</button>
+    <button id="showMultipleVictimButton">Multiple Victim</button>
+
+    <br><br>
+
+    <button id="resetButton">Reset</button>
+    <img id="scenes_image"></img>
+
    
 
  </body>
