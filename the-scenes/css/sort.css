@@ -50,14 +50,16 @@ span{
 
 /* //////////////////////////////// TESTING SORT SYSTEM //////////////////////////////// */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-
-.container{
-    width:100%;
-    text-align: center;
-}
+.categoryTag {
+    padding:4px 8px;
+    border: 1px solid black;
+    margin: 4px;
+  } 
+  
+   .Container{
+    padding:16px 24px;
+    border:1px solid black;
+    margin:8px;
+    background-color: pink;
+    
+  }   
