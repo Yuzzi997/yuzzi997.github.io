@@ -62,23 +62,8 @@ function gotAllData(err) {
     showData();
   }
 
+
+
+//   function showData() {
+//     console.log("showData()");
    
-//    scenes.forEach((image) => {
-//      // Print out what a single songs's data fields looks like
-//      console.log("SHOWING THE IMAGE");
-//      console.log(image.fields);
-
-    //  /** CREATE CONTAINER */
-    //  const imageContainer = document.createElement("div");
-    //  imageContainer.classList.add("imageContainer");
-
-
-    //   /*******************
-    //  ADD COVER ART
-    // *******************/
-    // let imageElement = imageEl.cloneNode(true)
-    // imageElement.classList.add("image")
-    //  //console.log(document)
-    //  imageElement.src = scenes.fields.image[0].url;
-    //  imageArtElement.innerText = scenes.fields.image;
-    //  imageContainer.appendChild(imageElement);
