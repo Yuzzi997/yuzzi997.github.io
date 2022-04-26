@@ -81,18 +81,10 @@ function gotAllData(err) {
             var button1 = document.querySelector("#showPublicButton");
             button1.addEventListener("click", function () {
                 if (sceneImage.classList.contains("public")) {
-                sceneImage.style.display = "block";
+                sceneImage.style.display = "blocks";
                 } else {
                 sceneImage.style.display = "none";
-            
-            var button2 = document.querySelector("#showPrivateButton");
-            button1.addEventListener("click", function () {
-                if (sceneImage.classList.contains("private")) {
-                sceneImage.style.display = "block";
-                } else {
-                sceneImage.style.display = "none";
-              }
-            })
+              
           
                 };
             });

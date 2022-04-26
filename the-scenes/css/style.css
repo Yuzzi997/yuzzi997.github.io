@@ -32,9 +32,9 @@ span{
 }
 
 .navimg{
-    width: calc(0.75em + 3vw);
+    width: calc(0.75em + 3vw) !important;
+    margin-top: 10px !important;
     margin-top: 10px;
-    
 }
 
 nav{
@@ -45,6 +45,11 @@ nav{
     align-items: center;
     padding-top:240px;
 }
+
+
+
+
+
 /* /////////////////////////////////// MEDIA SCREEN ///////////////////////////////////// */
 
 @media only screen and (max-width: 800px) {

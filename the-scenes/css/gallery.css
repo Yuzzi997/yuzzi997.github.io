@@ -32,10 +32,9 @@ span{
 }
 
 .navimg{
-    width: calc(0.75em + 3vw);
-
-    margin-top: 10px;
-
+    width: calc(0.75em + 3vw) !important;
+    margin-top: 10px !important;
+    margin:10px;
 }
 
 
@@ -46,3 +45,16 @@ span{
         margin-top: -10px;
     }
   }
+
+
+/* //////////////////////////////// JS CSS//////////////////////////////// */
+
+
+
+img{
+    width: 600px;
+    align-items: center;
+    height:auto;
+    margin-left: calc(30% - 30px);
+    margin-top: 30px;
+}
