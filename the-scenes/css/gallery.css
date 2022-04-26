@@ -52,9 +52,10 @@ span{
 
 
 img{
-    width: 600px;
+    /* width: 600px; */
     align-items: center;
     height:auto;
     margin-left: calc(30% - 30px);
     margin-top: 30px;
+    width:calc(4em + 40vw);
 }
