@@ -31,11 +31,10 @@ span{
     flex-wrap: wrap;
 }
 
-.navimg{
-    width: calc(0.75em + 3vw);
-
-    margin-top: 10px;
-
+.navimg  {
+    width: calc(0.75em + 3vw) !important;
+    margin-top: 10px !important;
+    margin:10px;
 }
 
 

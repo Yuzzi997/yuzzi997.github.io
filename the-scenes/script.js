@@ -71,7 +71,9 @@ function gotAllData(err) {
     scenes.forEach((scene) => {
         console.log("work");
         var sceneImage = document.createElement("img");
-        document.querySelector('body').append(sceneImage)
+        var imgContainer = document.querySelector('#container')
+        imgContainer.append(sceneImage);
+        // document.querySelector('body').append(sceneImage)
         sceneImage.src = scene.fields.image[0].url;
         
         var photoActions = scene.fields.category;
@@ -80,17 +82,89 @@ function gotAllData(err) {
 
             var button1 = document.querySelector("#showPublicButton");
             button1.addEventListener("click", function () {
-                if (sceneImage.classList.contains("public")) {
-                sceneImage.style.display = "blocks";
-                } else {
-                sceneImage.style.display = "none";
-              
-          
-                };
+              if (sceneImage.classList.contains("public")) {
+                  sceneImage.style.display = "flex";
+              } else {
+                  sceneImage.style.display = "none";
+              }
+            })
+            
+            var button2 = document.querySelector("#showPrivateButton");
+            button2.addEventListener("click", function () {
+            if (sceneImage.classList.contains("private")) {
+              console.log('hi')
+              sceneImage.style.display = "flex";
+            } else {
+              sceneImage.style.display = "none";
+            }
             });
-        })
-    })
-  }
+          })
+
+          var button3 = document.querySelector("#showGodsEyesButton");
+          button3.addEventListener("click", function () {
+            if (sceneImage.classList.contains("godseyes")) {
+                sceneImage.style.display = "flex";
+            } else {
+                sceneImage.style.display = "none";
+            }
+          })
+
+          var button4 = document.querySelector("#showGodsEyesButton");
+          button4.addEventListener("click", function () {
+            if (sceneImage.classList.contains("god's_eyes")) {
+                sceneImage.style.display = "flex";
+            } else {
+                sceneImage.style.display = "none";
+            }
+          })
+
+          var button5 = document.querySelector("#showLongShotButton");
+          button5.addEventListener("click", function () {
+            if (sceneImage.classList.contains("longshot")) {
+                sceneImage.style.display = "flex";
+            } else {
+                sceneImage.style.display = "none";
+            }
+          })
+
+          var button6 = document.querySelector("#showCloseShotButton");
+          button6.addEventListener("click", function () {
+            if (sceneImage.classList.contains("closeshot")) {
+                sceneImage.style.display = "flex";
+            } else {
+                sceneImage.style.display = "none";
+            }
+          })
+
+          var button7 = document.querySelector("#showNoVictimButton");
+          button7.addEventListener("click", function () {
+            if (sceneImage.classList.contains("novictim")) {
+                sceneImage.style.display = "flex";
+            } else {
+                sceneImage.style.display = "none";
+            }
+          })
+
+          var button8 = document.querySelector("#showSingleVictimButton");
+          button8.addEventListener("click", function () {
+            if (sceneImage.classList.contains("singular")) {
+                sceneImage.style.display = "flex";
+            } else {
+                sceneImage.style.display = "none";
+            }
+          })
+
+          var button9 = document.querySelector("#showMultipleVictimButton");
+          button9.addEventListener("click", function () {
+            if (sceneImage.classList.contains("plural")) {
+                sceneImage.style.display = "flex";
+            } else {
+                sceneImage.style.display = "none";
+            }
+          })
+
+      })
+    }
 
   function consoleLogPhotos() {
     // console.log("consoleLogPhotos()");

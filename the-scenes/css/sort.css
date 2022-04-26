@@ -86,7 +86,7 @@ em{
 img{
     width: 300px;
     height:fit-content;
-     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin:20px; 
     justify-content: center;
     align-content: center;
@@ -101,4 +101,10 @@ h1{
 button:hover{
     text-decoration: underline;
 }
+
+#container{
+    display:flex;
+    width:100%;
+    flex-wrap: wrap;
+}    
 
