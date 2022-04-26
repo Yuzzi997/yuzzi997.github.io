@@ -31,12 +31,14 @@ span{
     flex-wrap: wrap;
 }
 
-.navimg{
-    width: calc(0.75em + 3vw);
-
-    margin-top: 10px;
+.navimg  {
+    width: calc(0.75em + 3vw) !important;
+    margin-top: 10px !important;
+    margin:10px;
 
 }
+
+
 
 
 /* /////////////////////////////////// MEDIA SCREEN ///////////////////////////////////// */
@@ -50,16 +52,52 @@ span{
 
 /* //////////////////////////////// TESTING SORT SYSTEM //////////////////////////////// */
 
-.categoryTag {
-    padding:4px 8px;
-    border: 1px solid black;
-    margin: 4px;
+button {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-family: 'Metamorphous', cursive;
+    border:none;
+    outline:none;
+    color:black;
+    background-color: white;
+    cursor: pointer;
+    display:block;
+    margin-left:60px;
   } 
-  
-   .Container{
-    padding:16px 24px;
-    border:1px solid black;
-    margin:8px;
-    background-color: pink;
-    
-  }   
+
+#resetButton{
+    font-size: 40px;
+    margin-left: 10px; 
+    font-family: 'Lovers Quarrel', cursive;
+
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+
+    place-self: end;
+}
+
+em{
+    display: flex;
+    justify-content: space-between;
+}
+
+img{
+    width: 300px;
+    height:fit-content;
+     grid-template-columns: 1fr 1fr 1fr;
+    margin:20px; 
+    justify-content: center;
+    align-content: center;
+}
+
+h1{
+    font-size: 30px;
+    margin-left:10px;
+    font-family: 'Metamorphous', cursive;
+}
+
+button:hover{
+    text-decoration: underline;
+}

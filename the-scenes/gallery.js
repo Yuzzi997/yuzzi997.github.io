@@ -1,11 +1,12 @@
-console.log("hello");
+/* globals require */
+console.log("Hello, Airtable");
 
 var Airtable = require('airtable');
 var base = new Airtable({apiKey: 'keyN5uN05SQ6KpI6g'}).base('appKxL9aU5QyWGFe6');
 
 base('scenes').select({
     // Selecting the first 3 records in Grid view:
-    maxRecords: 3,
+    maxRecords: 106,
     view: "Grid view"
 }).eachPage(function page(records, fetchNextPage) {
     // This function (`page`) will get called for each page of records.
@@ -20,55 +21,69 @@ base('scenes').select({
     fetchNextPage();
 
 }, function done(err) {
-    if (err) { 
-        console.error(err); 
-        return; }
+    if (err) { console.error(err); return; }
 });
 
-/////////////////////
+// Get the "songs" table from the base, specify the view to be "View 2" (which is FILTERED for indie songs and SORTED by rating) and specify the callback functions that will receive each page of data
+base("scenes")
+  .select({
+    // add your view in here
+    view: "Grid view",
+  })
+  .eachPage(gotPageOfData, gotAllData);
 
-//get the "books" table from the base, select ALL the records
-// specify the functions that will receive the data
-base("scenes").select({}).eachPage(gotPageOfScenes, gotAllScenes);
-
-// an empty array to hold our book data
-const scenes = [];
+// an empty array to hold our people data
+let scenes = [];
 
 
+// callback function that receives each page of data (considered here as records) and adds them to our list of songs
+function gotPageOfData(records, fetchNextPage) {
+    console.log("gotPageOfData()");
+    console.log("There are " + records.length + " items in records");
+    // This takes the list of records and add them to the songs array
+    scenes.push(...records);
+    // request more pages
+    
+    fetchNextPage();
+  }
 
-// callback function that is used when all pages are loaded
-function gotAllScenes(err) {
-    console.log("gotAllScenes()");
+// call back function that is called when ALL pages are loaded
+function gotAllData(err) {
+    console.log("gotAllData()");
   
-    // report an error> this is what shows up if there's a problem
+    // report an error, you'd want to do something better than this in production
     if (err) {
-      console.log("error loading scenes");
+      console.log("error loading data");
       console.error(err);
       return;
     }
-  
-    // call functions to log and show the books
-    consoleLogScenes();
-    showScenes();
+
+    consoleLogPhotos();
+
+    // call function to show the data
+    showData();
   }
 
 
-function consoleLogScenes() {
-    console.log("consoleLogScenes()");
-    books.forEach((scene) => {
-      console.log("Scene:", image);
+
+  function showData() {
+    console.log("showData()");
+    scenes.forEach((scene) => {
+        console.log("work");
+        var sceneImage = document.createElement("img");
+        document.querySelector('body').append(sceneImage)
+        sceneImage.src = scene.fields.image[0].url;
     });
   }
 
 
-// loop through the books, create an h2 for each one, and add it to the page
-function showScenes() {
-    console.log("showScenes()");
-    books.forEach((scene) => {
-      const h2 = document.createElement("h2");
-  
-//     try changing 'title' below to 'description' and your description will show instead of your title    
-h2.innerText = scenes.fields.image;
-document.body.appendChild(h2);
-});
-}
+  function consoleLogPhotos() {
+    // console.log("consoleLogPhotos()");
+    scenes.forEach((photo) => {
+      console.log(photo);
+    });
+  }
+
+
+    
+    

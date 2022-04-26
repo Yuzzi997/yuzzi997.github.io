@@ -57,13 +57,53 @@ function gotAllData(err) {
       console.error(err);
       return;
     }
-  
+
+    consoleLogPhotos();
+
     // call function to show the data
     showData();
   }
 
 
 
-//   function showData() {
-//     console.log("showData()");
-   
+  function showData() {
+    console.log("showData()");
+    scenes.forEach((scene) => {
+        console.log("work");
+        var sceneImage = document.createElement("img");
+        document.querySelector('body').append(sceneImage)
+        sceneImage.src = scene.fields.image[0].url;
+        
+        var photoActions = scene.fields.category;
+        photoActions.forEach(function (b) {
+            sceneImage.classList.add(b);
+
+            var button1 = document.querySelector("#showPublicButton");
+            button1.addEventListener("click", function () {
+                if (sceneImage.classList.contains("public")) {
+                sceneImage.style.display = "block";
+                } else {
+                sceneImage.style.display = "none";
+            
+            var button2 = document.querySelector("#showPrivateButton");
+            button1.addEventListener("click", function () {
+                if (sceneImage.classList.contains("private")) {
+                sceneImage.style.display = "block";
+                } else {
+                sceneImage.style.display = "none";
+              }
+            })
+          
+                };
+            });
+        })
+    })
+  }
+
+  function consoleLogPhotos() {
+    // console.log("consoleLogPhotos()");
+    scenes.forEach((photo) => {
+      console.log(photo);
+    });
+  }
+
