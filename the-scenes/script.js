@@ -163,6 +163,14 @@ function gotAllData(err) {
             }
           })
 
+          // var button10 = document.querySelector
+          // ("#showResetButton");
+          // button10.addEventListener("click", function () {
+          //   if (sceneImage.classList.contains("plural, singular,novictim,closeshot,longshot,godseyes,private,public")) {
+          //     sceneImage.style.display = "flex";
+          //   }
+          // })
+
       })
     }
 
@@ -173,3 +181,4 @@ function gotAllData(err) {
     });
   }
 
+  
