@@ -72,6 +72,8 @@ function gotAllData(err) {
         console.log("work");
         var sceneImage = document.createElement("img");
         document.querySelector('body').append(sceneImage)
+        var imgContainer = document.querySelector('#container')
+        imgContainer.append(sceneImage);
         sceneImage.src = scene.fields.image[0].url;
     });
   }

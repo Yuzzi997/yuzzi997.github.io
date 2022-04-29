@@ -1,5 +1,16 @@
 
 /* /////////////////////////////////// NAV BAR ///////////////////////////////////// */
+html{
+    background-color: rgb(255, 255, 255);
+    /* scroll-behavior: auto; */
+}
+
+.bottom{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    color: black;
+}
+
 .home{
     font-family: 'Lovers Quarrel', cursive;
     font-size: calc(0.75em + 4vw);
@@ -33,6 +44,7 @@ span{
 
 .navimg{
     width: calc(0.75em + 3vw) !important;
+    height: auto !important;
     margin-top: 10px !important;
     margin:10px;
 }
@@ -54,8 +66,8 @@ span{
 img{
     /* width: 600px; */
     align-items: center;
-    height:auto;
+    max-height: 700px;
     margin-left: calc(30% - 30px);
-    margin-top: 30px;
+    margin-top: 200px;
     width:calc(4em + 40vw);
 }
