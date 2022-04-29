@@ -47,6 +47,7 @@ span{
     height: auto !important;
     margin-top: 10px !important;
     margin:10px;
+    border: none !important;
 }
 
 
@@ -70,4 +71,10 @@ img{
     margin-left: calc(30% - 30px);
     margin-top: 200px;
     width:calc(4em + 40vw);
+    border: 20px solid black;
+}
+
+#bottomline{
+    margin-top: 120px;
+    margin-bottom: 130px;
 }
