@@ -1,0 +1,22 @@
+.myimgs{
+    width: 120px;
+
+}
+
+video{
+    width:120px;
+}
+
+
+body{
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+div{
+    padding:400px;
+    flex-wrap: wrap;
+}
