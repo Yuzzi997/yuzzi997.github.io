@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded' , () => {
             if (
                 //bigger than 200 and smaller than 280; then we have game over
                 obstacleLeft > 200 && obstacleLeft < 280 && birdLeft === 220 &&
-                (birdBottom < obstacleBottom + 153 || birdBottom > obstacleBottom + gap -200)||
+                (birdBottom < obstacleBottom + 153 || birdBottom > obstacleBottom + gap -180)||
                 //the bird hits the bottom === 0
                 birdBottom === 0 
                 ) {
