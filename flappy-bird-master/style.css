@@ -1,8 +1,13 @@
+html{
+    background-image: url('background.jpeg');
+}
+
 body {
     display: flex;
 }
 
 .game-container {
+    /* padding:50px; */
     width: 500px;
     height: 730px;
     position: absolute;
