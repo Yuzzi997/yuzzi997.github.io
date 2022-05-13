@@ -77,7 +77,7 @@ body {
 
 @keyframes slideright {
     from {
-        background-position: 10000%;
+        background-position: 1000%;
     }
     to {
         background-position: 0%;
