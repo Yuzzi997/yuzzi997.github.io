@@ -1,7 +1,41 @@
-h1{
-    color:green;
+html, body {
+  margin: 0;
+  padding-left: 4%;
+  padding-top: 1%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: azure;
+}
+canvas {
+  display: block;
 }
 
-body{
-    background-color: pink;
+ #restartButton {
+  stroke:nostroke;
+  color:white;
+  position: absolute;
+  top: 20px;
+  left: 75%;
+  transform: translateX(50%);   
+  background: rgba(129, 8, 8, 0.718); 
+/* 	color: inherit; */
+ 	border: none;
+	padding: 520;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+} 
+
+div{
+    font-size: 30pt;
+    color: rgba(129, 8, 8, 0.718); 
 }
+
+p,a{
+    font-size: 30pt;
+    padding:5%;
+    padding-top: 20%;
+    padding-left: 13%;
+    text-decoration:dotted;
+    color: rgba(129, 8, 8, 0.718); ;
+}
+
